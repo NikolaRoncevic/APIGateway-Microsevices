@@ -24,6 +24,28 @@ services:
     depends_on:
       - consul-server
 
+  product-service:
+    image: product-service
+    build:
+      context: ./services/Product-Service
+      dockerfile: Dockerfile
+    tty: true
+    networks:
+      - static-network
+    depends_on:
+      - consul-server
+
+  storage-service:
+    image: storage-service
+    build:
+      context: ./services/Storage-Service
+      dockerfile: Dockerfile
+    tty: true
+    networks:
+      - static-network
+    depends_on:
+      - consul-server
+
   gateway:
     image: gateway
     build:
@@ -36,6 +58,19 @@ services:
       - static-network
     depends_on:
       - consul-server
+
+
+  postgres:
+    image: postgres:12-alpine
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: users
+    networks:
+      - static-network
 
 networks:
   static-network:

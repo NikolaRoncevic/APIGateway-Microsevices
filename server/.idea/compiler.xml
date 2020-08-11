@@ -6,8 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="authenticationservice" />
+        <module name="storageservice" />
         <module name="gateway" />
+        <module name="authenticationservice" />
+        <module name="productservice" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -16,6 +18,8 @@
       <module name="gateway" target="1.8" />
       <module name="kitchenservice" target="1.8" />
       <module name="orderservice" target="1.8" />
+      <module name="productservice" target="1.8" />
+      <module name="storageservice" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -25,6 +29,8 @@
       <module name="gateway" options="-parameters" />
       <module name="kitchenservice" options="-parameters" />
       <module name="orderservice" options="-parameters" />
+      <module name="productservice" options="-parameters" />
+      <module name="storageservice" options="-parameters" />
     </option>
   </component>
 </project>

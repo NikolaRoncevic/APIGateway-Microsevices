@@ -1,0 +1,8 @@
+rs\ac\uns\ftn\product\productservice\ProductServiceApplication.class
+rs\ac\uns\ftn\product\productservice\DTO\request\UpdateProductRequestDTO.class
+rs\ac\uns\ftn\product\productservice\service\ProductService.class
+rs\ac\uns\ftn\product\productservice\repository\ProductRepository.class
+rs\ac\uns\ftn\product\productservice\controller\ProductController.class
+rs\ac\uns\ftn\product\productservice\DTO\request\CreateProductRequestDTO.class
+rs\ac\uns\ftn\product\productservice\DTO\response\ProductResponseDTO.class
+rs\ac\uns\ftn\product\productservice\model\Product.class

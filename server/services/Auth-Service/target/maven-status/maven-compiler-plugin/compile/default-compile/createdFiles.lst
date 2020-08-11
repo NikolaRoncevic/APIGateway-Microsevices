@@ -1,1 +1,9 @@
+rs\ac\uns\ftn\auth\authservice\model\Company.class
 rs\ac\uns\ftn\auth\authservice\AuthenticationServiceApplication.class
+rs\ac\uns\ftn\auth\authservice\controller\AuthenticationController.class
+rs\ac\uns\ftn\auth\authservice\DTO\response\LoginResponseDTO.class
+rs\ac\uns\ftn\auth\authservice\model\BaseUser.class
+rs\ac\uns\ftn\auth\authservice\DTO\request\LoginRequestDTO.class
+rs\ac\uns\ftn\auth\authservice\repository\BaseUserRepository.class
+rs\ac\uns\ftn\auth\authservice\model\Admin.class
+rs\ac\uns\ftn\auth\authservice\service\AuthService.class

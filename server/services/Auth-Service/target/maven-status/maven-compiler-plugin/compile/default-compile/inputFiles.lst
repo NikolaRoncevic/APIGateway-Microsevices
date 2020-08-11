@@ -1,1 +1,9 @@
+D:\Fakultet\Diplomski\server\services\Auth-Service\src\main\java\rs\ac\uns\ftn\auth\authservice\model\Admin.java
+D:\Fakultet\Diplomski\server\services\Auth-Service\src\main\java\rs\ac\uns\ftn\auth\authservice\service\AuthService.java
+D:\Fakultet\Diplomski\server\services\Auth-Service\src\main\java\rs\ac\uns\ftn\auth\authservice\repository\BaseUserRepository.java
 D:\Fakultet\Diplomski\server\services\Auth-Service\src\main\java\rs\ac\uns\ftn\auth\authservice\AuthenticationServiceApplication.java
+D:\Fakultet\Diplomski\server\services\Auth-Service\src\main\java\rs\ac\uns\ftn\auth\authservice\DTO\response\LoginResponseDTO.java
+D:\Fakultet\Diplomski\server\services\Auth-Service\src\main\java\rs\ac\uns\ftn\auth\authservice\DTO\request\LoginRequestDTO.java
+D:\Fakultet\Diplomski\server\services\Auth-Service\src\main\java\rs\ac\uns\ftn\auth\authservice\model\Company.java
+D:\Fakultet\Diplomski\server\services\Auth-Service\src\main\java\rs\ac\uns\ftn\auth\authservice\controller\AuthenticationController.java
+D:\Fakultet\Diplomski\server\services\Auth-Service\src\main\java\rs\ac\uns\ftn\auth\authservice\model\BaseUser.java

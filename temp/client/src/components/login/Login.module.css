@@ -1,0 +1,13 @@
+.wrapper{
+    width: 50%;
+    margin: 20px auto;
+    border: 2px solid #AAAAAA;
+    border-radius: 2em;
+    padding : 2em;
+
+}
+
+.error {
+    width: 50%;
+    margin: 20px auto; 
+}
