@@ -3,6 +3,8 @@ import { useHistory } from "react-router-dom";
 import * as styles from './Login.module.css'
 import { Button, Form, Alert } from 'react-bootstrap';
 import axios from 'axios';
+import { useSelector,useDispatch } from 'react-redux';
+import * as actions from '../../store/actions/login';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -10,36 +12,29 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Login(props) {
     const [username,setUsername] =useState(``);
     const [password,setPassword]= useState(``);
-    const [error,setError] = useState(false);
+    const loggedUser = useSelector(state => state.login.loggedUser);
+    const error = useSelector(state => state.login.loginError);
     const history = useHistory();
+    const dispatch = useDispatch();
 
   
    
   
     function handleLogin(event) {
         event.preventDefault();
+        console.log('doso');
         const data = {
             username: username,
             password: password
           };
-          axios
-            .post(`http://localhost:8080/auth/login`, data)
-            .then(res => {
-                console.log(res);
-                setError(false);
-                history.push(`/`);
-                localStorage.setItem('loggedUser',JSON.stringify(res.data));
-            })
-            .catch(err => {
-                setError(true);
-            });
+          dispatch(actions.login(data));
         
     }
     useEffect(() => {
-        const loggedUser = localStorage.getItem(`loggedUser`);
-        if(loggedUser !== undefined) {
+        if(loggedUser.id !== null){
             history.push(`/`);
         }
+        
 
       });
     function handleUsernameChange(e) {
