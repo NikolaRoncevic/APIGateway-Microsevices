@@ -6,14 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="storageservice" />
-        <module name="gateway" />
         <module name="authenticationservice" />
+        <module name="authservice" />
+        <module name="gateway" />
+        <module name="storageservice" />
         <module name="productservice" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="authenticationservice" target="1.8" />
+      <module name="authservice" target="1.8" />
       <module name="consumerservice" target="1.8" />
       <module name="gateway" target="1.8" />
       <module name="kitchenservice" target="1.8" />
@@ -25,6 +27,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="authenticationservice" options="-parameters" />
+      <module name="authservice" options="-parameters" />
       <module name="consumerservice" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="kitchenservice" options="-parameters" />

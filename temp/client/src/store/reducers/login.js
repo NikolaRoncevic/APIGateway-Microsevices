@@ -28,10 +28,23 @@ const loginFailed = (state, action) => {
     }
 }
 
+const logout = (state,action) => {
+    return {
+        ...state,
+        loggedUser: {
+            ...state.loggedUser,
+            id : null,
+            username : null,
+            type: null
+        }
+    }
+}
+
 export const loginReducer = (state = intialState, action) => {
     switch (action.type) {
         case actionTypes.SET_LOGGED_USER: return setLoggedUser(state, action);
         case actionTypes.LOGIN_FAILED: return loginFailed(state, action);
+        case actionTypes.LOGOUT: return logout(state,action);
         default: return state;
     }
 }

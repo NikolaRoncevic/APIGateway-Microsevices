@@ -17,6 +17,12 @@ export const loginFailed = (error) => {
     }
 }
 
+export const logout = () => {
+    return {
+        type: actionTypes.LOGOUT
+    }
+}
+
 export const login = (data) => {
     return dispacth => {
         axios

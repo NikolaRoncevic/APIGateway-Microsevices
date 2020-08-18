@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { useHistory } from "react-router-dom";
 import * as styles from './Login.module.css'
 import { Button, Form, Alert } from 'react-bootstrap';
@@ -22,7 +22,6 @@ function Login(props) {
   
     function handleLogin(event) {
         event.preventDefault();
-        console.log('doso');
         const data = {
             username: username,
             password: password

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Diplomski.iml" filepath="$PROJECT_DIR$/.idea/Diplomski.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/services/Auth-Service/authservice.iml" filepath="$PROJECT_DIR$/server/services/Auth-Service/authservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/services/Gateway/gateway.iml" filepath="$PROJECT_DIR$/server/services/Gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/services/Product-Service/productservice.iml" filepath="$PROJECT_DIR$/server/services/Product-Service/productservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/services/Storage-Service/storageservice.iml" filepath="$PROJECT_DIR$/server/services/Storage-Service/storageservice.iml" />
+    </modules>
+  </component>
+</project>
