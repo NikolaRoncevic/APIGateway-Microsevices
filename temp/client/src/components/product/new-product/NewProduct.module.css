@@ -1,0 +1,17 @@
+.wrapper{
+    width: 50%;
+    margin: 20px auto;
+    border: 2px solid #AAAAAA;
+    border-radius: 2em;
+    padding : 2em;
+
+}
+
+.title { 
+    color: #555555
+}
+
+.alert {
+    width: 50%;
+    margin: 20px auto; 
+}

@@ -19,7 +19,7 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
-    @RequestMapping(value = "", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/new", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> createNewProduct(@RequestBody CreateProductRequestDTO requestDTO){
         return new ResponseEntity<>(productService.createNewProduct(requestDTO), HttpStatus.CREATED);
     }

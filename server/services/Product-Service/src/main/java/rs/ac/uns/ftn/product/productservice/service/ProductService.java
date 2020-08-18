@@ -23,6 +23,7 @@ public class ProductService {
         Product p = new Product();
         p.setName(requestDTO.getName());
         p.setPrice(requestDTO.getPrice());
+        productRepository.save(p);
         return mapProductToProductResponseDTO(p);
     }
     public List<ProductResponseDTO> getAllProducts() {
@@ -37,6 +38,7 @@ public class ProductService {
         Product p = productRepository.findOneById(requestDTO.getId());
         p.setPrice(requestDTO.getPrice());
         p.setName(requestDTO.getName());
+        productRepository.save(p);
         return mapProductToProductResponseDTO(p);
     }
 

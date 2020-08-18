@@ -1,0 +1,8 @@
+.dropdownItem {
+    margin: 0px auto;
+    color: gray;
+}
+
+.dropdownItem::hover {
+    color: gray;
+}

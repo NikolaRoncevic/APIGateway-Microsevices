@@ -1,42 +1,31 @@
 import * as actionTypes from './../actions/actionTypes'
 
+
 const intialState = {
-    loggedUser: {
-        id : null,
-        username : null,
-        type : null,
-    },
     loginError: false,
+    loginComplete : false,
 }
 
 const setLoggedUser = (state, action) => {
+    localStorage.setItem('loggedUser',JSON.stringify(action.loggedUser));
     return {
         ...state,
         loginError: false,
-        loggedUser: {
-            ...state.loggedUser,
-            id: action.loggedUser.id,
-            username: action.loggedUser.username,
-            type: action.loggedUser.type
-        }
+        loginComplete : true
     }
 }
 const loginFailed = (state, action) => {
     return {
         ...state,
         loginError: true,
+        loginComplete : false
     }
 }
 
 const logout = (state,action) => {
+    localStorage.removeItem('loggedUser');
     return {
         ...state,
-        loggedUser: {
-            ...state.loggedUser,
-            id : null,
-            username : null,
-            type: null
-        }
     }
 }
 

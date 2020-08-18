@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useHistory } from "react-router-dom";
 import * as styles from './Login.module.css'
 import { Button, Form, Alert } from 'react-bootstrap';
-import axios from 'axios';
 import { useSelector,useDispatch } from 'react-redux';
 import * as actions from '../../store/actions/login';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -12,14 +11,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Login(props) {
     const [username,setUsername] =useState(``);
     const [password,setPassword]= useState(``);
-    const loggedUser = useSelector(state => state.login.loggedUser);
+    const [loggedUser,setLoggedUser] = useState(null);
+    const userLogged = useSelector(state => state.login.loginComplete);
     const error = useSelector(state => state.login.loginError);
     const history = useHistory();
     const dispatch = useDispatch();
 
-  
-   
-  
     function handleLogin(event) {
         event.preventDefault();
         const data = {
@@ -27,15 +24,17 @@ function Login(props) {
             password: password
           };
           dispatch(actions.login(data));
+          
+          
         
     }
     useEffect(() => {
-        if(loggedUser.id !== null){
+        if(localStorage.getItem('loggedUser')) {
+            setLoggedUser(JSON.parse(localStorage.getItem(`loggedUser`)));
             history.push(`/`);
         }
-        
+    },[userLogged,loggedUser,history]);
 
-      });
     function handleUsernameChange(e) {
         setUsername(e.target.value);
     }

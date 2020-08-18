@@ -9,11 +9,13 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
 import thunk from 'redux-thunk';
 import { loginReducer } from './store/reducers/login';
+import {createProductReducer} from './store/reducers/createProduct'
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const rootReducer = combineReducers({
-  login: loginReducer
+  login: loginReducer,
+  createProduct : createProductReducer
 })
 
 const store = createStore(rootReducer, composeEnhancers(
