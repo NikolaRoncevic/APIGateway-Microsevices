@@ -51,17 +51,14 @@ function NewProduct(props) {
         </div>
     )
     if (error === true) {
-        console.log('dosao da dodam error')
         data = (
             <div>
                 {data}
-                <Alert className={styles.alert} variant={`danger`}>Doslo je do greske prilikom kreiranja proizvoda</Alert>
+                <Alert className={styles.alert} variant={`danger`}>Doslo je do greske prilikom kreiranja proizvoda moguce je da postoji proizvod sa istim imenom</Alert>
             </div>
         )
     }
     if (success === true) {
-
-        console.log('dosao da dodam success')
         data = (
             <div>
                 {data}

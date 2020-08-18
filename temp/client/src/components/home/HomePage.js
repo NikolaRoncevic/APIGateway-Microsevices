@@ -6,6 +6,7 @@ import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import * as actions from '../../store/actions/login'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NewProduct from '../product/new-product/NewProduct.jsx'
+import AllProducts from '../product/all-products/AllProducts'
 
 function HomePage(props) {
     const [loggedUser,setLoggedUser] = useState(null);
@@ -25,8 +26,10 @@ function HomePage(props) {
     if (loggedUser) {
         if (loggedUser.type === `ADMIN`) {
             dropdown =
-                (<NavDropdown title="Actions" id="basic-nav-dropdown">
+                (<NavDropdown className={`${styles.dropdown}`}title="Actions" id="basic-nav-dropdown">
                     <Link className={`${styles.dropdownItem}`} to={`/product/new`}>New product</ Link>
+                    <br />
+                    <Link className={`${styles.dropdownItem}`} to={`/product/all`}>All products</ Link>
                 </NavDropdown>)
         }
     }
@@ -52,6 +55,9 @@ function HomePage(props) {
             <Switch>
                 <Route path={`/product/new`}>
                     <NewProduct />
+                </Route>
+                <Route path={`/product/all`}>
+                    <AllProducts />
                 </Route>
             </Switch>
         </div>
