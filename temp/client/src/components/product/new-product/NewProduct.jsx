@@ -30,9 +30,6 @@ function NewProduct(props) {
 
 
     }
-    useEffect(() => {
-        console.log(error + " " + success);
-    })
     let data = (
         <div className={styles.wrapper}>
             <Form onSubmit={(e) => createNewProduct(e)}>

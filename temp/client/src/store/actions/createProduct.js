@@ -25,11 +25,9 @@ export const createProduct = (data) => {
         axios
             .post(`http://localhost:8080/product/new`, data)
             .then(res => {
-                console.log('uspesno kreirao');
                 dispatch(productCreated(res))
             })
             .catch(err => {
-                console.log('greska');
                 dispatch(createProductFailed(err))
             });
     }

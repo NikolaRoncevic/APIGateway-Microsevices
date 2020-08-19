@@ -1,13 +1,13 @@
 import React, { useEffect,useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory, Switch, Route, Link } from 'react-router-dom';
-import * as styles from './HomePage.module.css'
+import * as styles from './HomePage.module.css';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import * as actions from '../../store/actions/login'
+import * as actions from '../../store/actions/login';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NewProduct from '../product/new-product/NewProduct.jsx'
-import AllProducts from '../product/all-products/AllProducts'
-
+import NewProduct from '../product/new-product/NewProduct.jsx';
+import AllProducts from '../product/all-products/AllProducts';
+import UpdateProduct from '../product/update-product/UpdateProduct';
 function HomePage(props) {
     const [loggedUser,setLoggedUser] = useState(null);
     const history = useHistory();
@@ -48,7 +48,7 @@ function HomePage(props) {
                     <Link className="nav-link" to={`/`}>Home</Link>
                     {dropdown}
                 </Nav>
-                <Nav className="mr-left">
+                 <Nav className="mr-left">
                     <Nav.Link className="nav-link" onClick={logout}>Logout</Nav.Link>
                 </Nav>
             </Navbar>
@@ -58,6 +58,11 @@ function HomePage(props) {
                 </Route>
                 <Route path={`/product/all`}>
                     <AllProducts />
+                </Route>
+                <Route path={`/product/update/:id`}>
+                    {({match}) => {
+                        return <UpdateProduct id={match.params.id}/>
+                    }}
                 </Route>
             </Switch>
         </div>

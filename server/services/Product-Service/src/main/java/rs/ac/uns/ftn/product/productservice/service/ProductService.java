@@ -42,6 +42,11 @@ public class ProductService {
         return mapProductToProductResponseDTO(p);
     }
 
+    public ProductResponseDTO getOneById(Long id) {
+        Product p = productRepository.findOneById(id);
+        return mapProductToProductResponseDTO(p);
+    }
+
     private ProductResponseDTO mapProductToProductResponseDTO(Product p) {
         ProductResponseDTO responseDTO = new ProductResponseDTO();
         responseDTO.setId(p.getId());

@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import * as actions from '../../../store/actions/getAllProducts';
-import { Alert } from 'react-bootstrap';
+import * as styles from './AllProducts.module.css'
+import { Alert,Button } from 'react-bootstrap';
+import {Link} from "react-router-dom";
 function AllProducts(props) {
     const products = useSelector(state => state.fetchProducts.products);
     const sucess = useSelector(state => state.fetchProducts.fetchProductsSuccess);
@@ -13,15 +15,16 @@ function AllProducts(props) {
     }, [dispatch])
     if (sucess) {
         data = products.map((product, index) => (
-            <tr>
+            <tr key={product.id}>
                 <td>{index}</td>
                 <td>{product.name}</td>
                 <td>{product.price}</td>
+                <td><Link className={styles.link} to={`/product/update/${product.id}`}><Button>Update product</Button></Link></td>
             </tr>
         ))
     }
     let table = (
-        <table class="table">
+        <table className="table">
             <thead>
                 <tr>
                     <th scope="col">#</th>

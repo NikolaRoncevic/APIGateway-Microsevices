@@ -4,10 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import rs.ac.uns.ftn.product.productservice.DTO.request.CreateProductRequestDTO;
 import rs.ac.uns.ftn.product.productservice.DTO.request.UpdateProductRequestDTO;
 import rs.ac.uns.ftn.product.productservice.service.ProductService;
@@ -32,5 +29,9 @@ public class ProductController {
     @RequestMapping(value = "", method = RequestMethod.PUT,consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> updateProduct(@RequestBody UpdateProductRequestDTO requestDTO) {
         return new ResponseEntity<>(productService.updateProduct(requestDTO),HttpStatus.ACCEPTED);
+    }
+    @RequestMapping(value = "/{id}",method = RequestMethod.GET)
+    public ResponseEntity<?> getByProductId(@PathVariable Long id) {
+        return new ResponseEntity<>(productService.getOneById(id),HttpStatus.ACCEPTED);
     }
 }
