@@ -1,0 +1,7 @@
+/Users/nikola/IdeaProjects/Diplomski/server/services/Storage-Service/src/main/java/rs/ac/uns/ftn/storage/storageservice/controller/ProductQuantityController.java
+/Users/nikola/IdeaProjects/Diplomski/server/services/Storage-Service/src/main/java/rs/ac/uns/ftn/storage/storageservice/StorageServiceApplication.java
+/Users/nikola/IdeaProjects/Diplomski/server/services/Storage-Service/src/main/java/rs/ac/uns/ftn/storage/storageservice/model/ProductQuantity.java
+/Users/nikola/IdeaProjects/Diplomski/server/services/Storage-Service/src/main/java/rs/ac/uns/ftn/storage/storageservice/repository/ProductQuantityRepository.java
+/Users/nikola/IdeaProjects/Diplomski/server/services/Storage-Service/src/main/java/rs/ac/uns/ftn/storage/storageservice/service/ProductQuantityService.java
+/Users/nikola/IdeaProjects/Diplomski/server/services/Storage-Service/src/main/java/rs/ac/uns/ftn/storage/storageservice/DTO/response/ProductQuantityResponseDTO.java
+/Users/nikola/IdeaProjects/Diplomski/server/services/Storage-Service/src/main/java/rs/ac/uns/ftn/storage/storageservice/DTO/request/IncreaseProductsQuantityRequestDTO.java

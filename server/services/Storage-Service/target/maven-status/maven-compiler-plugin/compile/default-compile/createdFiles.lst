@@ -1,0 +1,7 @@
+rs/ac/uns/ftn/storage/storageservice/StorageServiceApplication.class
+rs/ac/uns/ftn/storage/storageservice/DTO/request/IncreaseProductsQuantityRequestDTO.class
+rs/ac/uns/ftn/storage/storageservice/controller/ProductQuantityController.class
+rs/ac/uns/ftn/storage/storageservice/repository/ProductQuantityRepository.class
+rs/ac/uns/ftn/storage/storageservice/model/ProductQuantity.class
+rs/ac/uns/ftn/storage/storageservice/DTO/response/ProductQuantityResponseDTO.class
+rs/ac/uns/ftn/storage/storageservice/service/ProductQuantityService.class
