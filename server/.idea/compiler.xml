@@ -10,8 +10,9 @@
         <module name="authenticationservice" />
         <module name="authservice" />
         <module name="gateway" />
-        <module name="storageservice" />
         <module name="productservice" />
+        <module name="storageservice" />
+        <module name="orderservice" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -23,6 +24,7 @@
       <module name="orderservice" target="1.8" />
       <module name="productservice" target="1.8" />
       <module name="storageservice" target="1.8" />
+      <module name="storageservice (1)" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -35,6 +37,7 @@
       <module name="orderservice" options="-parameters" />
       <module name="productservice" options="-parameters" />
       <module name="storageservice" options="-parameters" />
+      <module name="storageservice (1)" options="-parameters" />
     </option>
   </component>
 </project>

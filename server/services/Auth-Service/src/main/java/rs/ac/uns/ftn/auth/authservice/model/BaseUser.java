@@ -21,9 +21,11 @@ public abstract class BaseUser {
 
     @Column(nullable = false)
     private String password;
+}
 
+/*
     @Transient
     public String getDicriminatorValue() {
         return this.getClass().getAnnotation(DiscriminatorValue.class).value();
     }
-}
+}*/

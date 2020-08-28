@@ -1,0 +1,12 @@
+/Users/nikola/IdeaProjects/Diplomski/server/services/Order-Service/src/main/java/rs/ac/uns/ftn/order/orderservice/DTO/response/ProductQuantityOrderResponseDTO.java
+/Users/nikola/IdeaProjects/Diplomski/server/services/Order-Service/src/main/java/rs/ac/uns/ftn/order/orderservice/DTO/response/OrderResponseDTO.java
+/Users/nikola/IdeaProjects/Diplomski/server/services/Order-Service/src/main/java/rs/ac/uns/ftn/order/orderservice/repository/ProductQuantityOrderRepository.java
+/Users/nikola/IdeaProjects/Diplomski/server/services/Order-Service/src/main/java/rs/ac/uns/ftn/order/orderservice/model/Order.java
+/Users/nikola/IdeaProjects/Diplomski/server/services/Order-Service/src/main/java/rs/ac/uns/ftn/order/orderservice/repository/OrderRepository.java
+/Users/nikola/IdeaProjects/Diplomski/server/services/Order-Service/src/main/java/rs/ac/uns/ftn/order/orderservice/DTO/request/NewOrderRequestDTO.java
+/Users/nikola/IdeaProjects/Diplomski/server/services/Order-Service/src/main/java/rs/ac/uns/ftn/order/orderservice/DTO/request/NewProductQuantityOrderRequestDTO.java
+/Users/nikola/IdeaProjects/Diplomski/server/services/Order-Service/src/main/java/rs/ac/uns/ftn/order/orderservice/service/OrderService.java
+/Users/nikola/IdeaProjects/Diplomski/server/services/Order-Service/src/main/java/rs/ac/uns/ftn/order/orderservice/model/ProductQuantityOrder.java
+/Users/nikola/IdeaProjects/Diplomski/server/services/Order-Service/src/main/java/rs/ac/uns/ftn/order/orderservice/OrderServiceApplication.java
+/Users/nikola/IdeaProjects/Diplomski/server/services/Order-Service/src/main/java/rs/ac/uns/ftn/order/orderservice/controller/OrderController.java
+/Users/nikola/IdeaProjects/Diplomski/server/services/Order-Service/src/main/java/rs/ac/uns/ftn/order/orderservice/service/ProductQuantityOrderService.java

@@ -1,5 +1,6 @@
 package rs.ac.uns.ftn.storage.storageservice.controller;
 
+import feign.Response;
 import org.bouncycastle.cert.ocsp.Req;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -36,6 +37,11 @@ public class ProductQuantityController {
         requestDTO.setQuantity(-requestDTO.getQuantity());
         return new ResponseEntity<>(productQuantityService.increaseProductQuantity(requestDTO), HttpStatus.ACCEPTED);
 
+    }
+
+    @RequestMapping(value = "check-availability/{productId}/{quantity}",method = RequestMethod.GET)
+    public ResponseEntity<?> checkIfAmountAvailable(@PathVariable Long productId,@PathVariable long quantity) {
+        return new ResponseEntity<>(productQuantityService.checkIfAmountAvailable(productId,quantity),HttpStatus.ACCEPTED);
     }
 
     @RequestMapping(value = "/all", method = RequestMethod.GET)

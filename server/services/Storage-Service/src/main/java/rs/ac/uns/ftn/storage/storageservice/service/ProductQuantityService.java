@@ -45,6 +45,15 @@ public class ProductQuantityService {
         productQuantity.setQuantity(productQuantity.getQuantity() + requestDTO.getQuantity());
         return this.save(productQuantity);
     }
+    public boolean checkIfAmountAvailable(Long productId,long quantity) {
+        ProductQuantity productQuantity = productQuantityRepository.findOneByProductId(productId);
+        long availableAmount = productQuantity.getQuantity();
+        if(availableAmount > quantity){
+            return true;
+        }else{
+            return false;
+        }
+    }
     private ProductQuantityResponseDTO mapToResponse(ProductQuantity productQuantity){
         ProductQuantityResponseDTO responseDTO = new ProductQuantityResponseDTO();
         responseDTO.setId(productQuantity.getId());

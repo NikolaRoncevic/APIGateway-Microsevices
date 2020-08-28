@@ -28,3 +28,9 @@ spring:
             - Path=/storage/**
           filters:
             - RewritePath=/storage/(?<path>.*),/$\{path}
+        - id: order
+          uri: lb://order
+          predicates:
+            - Path=/order/**
+          filters:
+            - RewritePath=/order/(?<path>.*),/$\{path}

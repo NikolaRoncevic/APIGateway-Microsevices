@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/services/Auth-Service/authenticationservice.iml" filepath="$PROJECT_DIR$/services/Auth-Service/authenticationservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/services/Auth-Service/authservice.iml" filepath="$PROJECT_DIR$/services/Auth-Service/authservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/services/Gateway/gateway.iml" filepath="$PROJECT_DIR$/services/Gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/Order-Service/orderservice.iml" filepath="$PROJECT_DIR$/services/Order-Service/orderservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/services/Product-Service/productservice.iml" filepath="$PROJECT_DIR$/services/Product-Service/productservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/server.iml" filepath="$PROJECT_DIR$/.idea/server.iml" />
       <module fileurl="file://$PROJECT_DIR$/services/Storage-Service/storageservice.iml" filepath="$PROJECT_DIR$/services/Storage-Service/storageservice.iml" />
