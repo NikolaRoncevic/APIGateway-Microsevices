@@ -22,5 +22,5 @@ public class ProductQuantityOrder {
 
     @JsonManagedReference
     @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
-    private Order order;
+    private OrderRequest order;
 }

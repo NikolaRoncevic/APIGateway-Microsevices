@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import rs.ac.uns.ftn.product.productservice.DTO.request.CreateProductRequestDTO;
 import rs.ac.uns.ftn.product.productservice.DTO.request.UpdateProductRequestDTO;
+import rs.ac.uns.ftn.product.productservice.DTO.response.ProductResponseDTO;
 import rs.ac.uns.ftn.product.productservice.service.ProductService;
 
 
@@ -17,7 +18,7 @@ public class ProductController {
     private ProductService productService;
 
     @RequestMapping(value = "/new", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<?> createNewProduct(@RequestBody CreateProductRequestDTO requestDTO){
+    public ResponseEntity<ProductResponseDTO> createNewProduct(@RequestBody CreateProductRequestDTO requestDTO){
         return new ResponseEntity<>(productService.createNewProduct(requestDTO), HttpStatus.CREATED);
     }
 

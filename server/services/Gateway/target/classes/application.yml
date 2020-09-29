@@ -34,3 +34,9 @@ spring:
             - Path=/order/**
           filters:
             - RewritePath=/order/(?<path>.*),/$\{path}
+        - id: composer
+          uri: lb://composer
+          predicates:
+            - Path=/composer/**
+          filters:
+            - RewritePath=/composer/(?<path>.*),/$\{path}

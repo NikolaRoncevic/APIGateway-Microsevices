@@ -1,0 +1,6 @@
+/Users/nikola/IdeaProjects/Diplomski/server/services/Composer-Service/src/main/java/rs/ac/uns/ftn/composer/composerservice/feignclient/StorageServiceProxy.java
+/Users/nikola/IdeaProjects/Diplomski/server/services/Composer-Service/src/main/java/rs/ac/uns/ftn/composer/composerservice/DTO/request/CreateProductRequestDTO.java
+/Users/nikola/IdeaProjects/Diplomski/server/services/Composer-Service/src/main/java/rs/ac/uns/ftn/composer/composerservice/controller/ComposerController.java
+/Users/nikola/IdeaProjects/Diplomski/server/services/Composer-Service/src/main/java/rs/ac/uns/ftn/composer/composerservice/DTO/response/ProductResponseDTO.java
+/Users/nikola/IdeaProjects/Diplomski/server/services/Composer-Service/src/main/java/rs/ac/uns/ftn/composer/composerservice/feignclient/ProductServiceProxy.java
+/Users/nikola/IdeaProjects/Diplomski/server/services/Composer-Service/src/main/java/rs/ac/uns/ftn/composer/composerservice/ComposerServiceApplication.java

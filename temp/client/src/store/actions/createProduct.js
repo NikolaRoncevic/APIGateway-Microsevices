@@ -23,7 +23,7 @@ export const createProduct = (data) => {
     return dispatch => {
         dispatch(createProductStarted())
         axios
-            .post(`http://localhost:8080/product/new`, data)
+            .post(`http://localhost:8080/composer/api/product/new`, data)
             .then(res => {
                 dispatch(productCreated(res))
             })

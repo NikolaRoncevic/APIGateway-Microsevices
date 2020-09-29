@@ -2,11 +2,11 @@ rs/ac/uns/ftn/order/orderservice/DTO/request/NewProductQuantityOrderRequestDTO.c
 rs/ac/uns/ftn/order/orderservice/model/ProductQuantityOrder.class
 rs/ac/uns/ftn/order/orderservice/service/ProductQuantityOrderService.class
 rs/ac/uns/ftn/order/orderservice/controller/OrderController.class
-rs/ac/uns/ftn/storage/storageservice/OrderServiceApplication.class
-rs/ac/uns/ftn/order/orderservice/model/Order.class
 rs/ac/uns/ftn/order/orderservice/DTO/response/ProductQuantityOrderResponseDTO.class
 rs/ac/uns/ftn/order/orderservice/repository/OrderRepository.class
-rs/ac/uns/ftn/order/orderservice/service/OrderService.class
 rs/ac/uns/ftn/order/orderservice/DTO/response/OrderResponseDTO.class
+rs/ac/uns/ftn/order/orderservice/model/OrderRequest.class
 rs/ac/uns/ftn/order/orderservice/DTO/request/NewOrderRequestDTO.class
+rs/ac/uns/ftn/order/orderservice/OrderServiceApplication.class
+rs/ac/uns/ftn/order/orderservice/service/OrderRequestService.class
 rs/ac/uns/ftn/order/orderservice/repository/ProductQuantityOrderRepository.class

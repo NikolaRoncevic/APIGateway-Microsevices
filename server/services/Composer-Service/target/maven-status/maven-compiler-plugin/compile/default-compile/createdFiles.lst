@@ -1,0 +1,6 @@
+rs/ac/uns/ftn/composer/composerservice/feignclient/StorageServiceProxy.class
+rs/ac/uns/ftn/composer/composerservice/feignclient/ProductServiceProxy.class
+rs/ac/uns/ftn/composer/composerservice/controller/ComposerController.class
+rs/ac/uns/ftn/composer/composerservice/DTO/response/ProductResponseDTO.class
+rs/ac/uns/ftn/composer/composerservice/DTO/request/CreateProductRequestDTO.class
+rs/ac/uns/ftn/composer/composerservice/ComposerServiceApplication.class

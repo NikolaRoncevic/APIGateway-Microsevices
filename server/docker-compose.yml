@@ -57,6 +57,17 @@ services:
     depends_on:
       - consul-server
 
+  composer-service:
+    image: composer-service
+    build:
+      context: ./services/Composer-Service
+      dockerfile: Dockerfile
+    tty: true
+    networks:
+      - static-network
+    depends_on:
+      - consul-server
+
   gateway:
     image: gateway
     build:
